@@ -1,0 +1,105 @@
+{
+  "algorithm": "kmeans",
+  "params": {},
+  "k": 4,
+  "features": [
+    "coop_rate",
+    "p_c_after_CC",
+    "p_c_after_CD",
+    "p_c_after_DC",
+    "p_c_after_DD"
+  ],
+  "smoothing": 2.0,
+  "priors": {
+    "CC": 0.9247159090909091,
+    "CD": 0.5844290657439446,
+    "DC": 0.21107266435986158,
+    "DD": 0.11918016194331983
+  },
+  "cluster_names": {
+    "3": "Defector",
+    "0": "Forgiving Cooperator",
+    "2": "Erratic",
+    "1": "Reciprocator"
+  },
+  "strategy_info": {
+    "Defector": "Mostly defects and rarely returns to cooperation, even when the opponent cooperates. Closest to Always-Defect / Grim Trigger.",
+    "Erratic": "Inconsistent play: often breaks off mutual cooperation and switches moves frequently, with little dependence on what the opponent did.",
+    "Reciprocator": "Mirrors the opponent: cooperates after the opponent cooperated and defects after the opponent defected. Closest to Tit-for-Tat.",
+    "Forgiving Cooperator": "Cooperates most of the time and keeps cooperating even after being betrayed. Closest to Always-Cooperate."
+  },
+  "profiles": {
+    "Forgiving Cooperator": {
+      "coop_rate": 0.8035,
+      "p_c_after_CC": 0.9487,
+      "p_c_after_CD": 0.6923,
+      "p_c_after_DC": 0.3402,
+      "p_c_after_DD": 0.2647
+    },
+    "Reciprocator": {
+      "coop_rate": 0.5779,
+      "p_c_after_CC": 0.9536,
+      "p_c_after_CD": 0.3285,
+      "p_c_after_DC": 0.5784,
+      "p_c_after_DD": 0.1335
+    },
+    "Erratic": {
+      "coop_rate": 0.2771,
+      "p_c_after_CC": 0.4852,
+      "p_c_after_CD": 0.323,
+      "p_c_after_DC": 0.2159,
+      "p_c_after_DD": 0.2867
+    },
+    "Defector": {
+      "coop_rate": 0.1295,
+      "p_c_after_CC": 0.8585,
+      "p_c_after_CD": 0.4485,
+      "p_c_after_DC": 0.1008,
+      "p_c_after_DD": 0.0627
+    }
+  },
+  "centroids_scaled": [
+    [
+      1.166511,
+      0.551992,
+      1.00029,
+      0.343872,
+      0.574991
+    ],
+    [
+      0.480158,
+      0.576134,
+      -0.718758,
+      1.411004,
+      -0.218805
+    ],
+    [
+      -0.435394,
+      -1.75908,
+      -0.744745,
+      -0.213377,
+      0.70796
+    ],
+    [
+      -0.884732,
+      0.102247,
+      -0.151847,
+      -0.729005,
+      -0.64693
+    ]
+  ],
+  "scaler_mean": [
+    0.42016,
+    0.83801,
+    0.480636,
+    0.26351,
+    0.169675
+  ],
+  "scaler_scale": [
+    0.328583,
+    0.200587,
+    0.211639,
+    0.223161,
+    0.165292
+  ]
+}
